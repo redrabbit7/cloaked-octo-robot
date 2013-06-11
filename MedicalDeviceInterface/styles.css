@@ -1,0 +1,124 @@
+body {
+		background-color:#FF9;
+		}
+
+.center
+{
+	background-color:#FFC;
+	margin:auto;
+	min-height:400px;
+	width:900px;
+	border: 2px solid #FFCC00;
+	padding: 20px;
+}
+
+.label {
+	
+	width: 200px;
+}
+
+.item {
+	float:left;
+	width:790px;
+	padding:7px;
+	background:#FFFBC9;
+	border: solid 1px #CCC;
+}
+
+#finalizeRx {
+	float:left;
+	width:790px;
+	padding:10px;
+	background:#FFFBC9;
+}
+
+.selectItem {
+	float:left;
+	width:790px;
+	padding:10px;
+	background:#FFFBC9;
+}
+
+.numberField {
+	background:#FFFBC9;
+	width:80px;
+	border:1px solid #09F;
+}
+
+#riskFrame {
+	font-weight:bold;
+	}
+
+.selected {
+	border:1px solid #E31441;
+	background:#FFF0F3;
+}
+
+#csv {
+ position:relative;
+ top:820px;
+}
+
+#Instructions{
+	width: inherit;
+	text-align: left;
+	font-family: Arial, Helvetica, 	sans-serif;
+	font-size: 20pt;
+}
+
+#input{
+	margin:auto;
+	width: 100%;
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+	text-align: left;
+}
+
+.high-risk {
+	color: #900;
+}
+
+.low-risk {
+	color: #06F;
+}
+
+#drugName {
+	font-weight:bold;
+	font-size: inherit;
+	}
+	
+#drugList {
+	font-size: 16px;
+	}
+	
+#instruction {
+	font-weight:normal;
+	
+	}
+	
+.fieldLabel {
+	width: 120px;
+	font-weight: bold;
+	padding-right: 3px;
+	float:left;
+	}
+	
+.fieldValue {
+	padding-left: 3px;
+	width:100px;
+	border:1px solid #000;
+	background-color: #FFF;
+	float:left;
+	}
+	
+#gc-overlay { 
+        position: absolute; 
+        top: 0px; 
+        left: 0px; 
+        width: 100%; 
+        height: 100%; 
+        background: #FFFFFF; 
+        filter: alpha(opacity=60); 
+        opacity: 0.6; 
+} 

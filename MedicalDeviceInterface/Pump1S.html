@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Pump1S</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="styles.css"/>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+	google.load("jquery", "1.4");
+	google.load("jqueryui", "1.7.2");
+	
+	var dose="";
+	var trial = 1;
+	
+</script>
+<script type="text/javascript" src="./javascript/jquery.js"></script><script type="text/javascript" src="./javascript/navigate.js"></script>
+<script type="text/javascript" src="./javascript/exporganise.js"></script>
+<script>shuffleAll();</script>
+</head>
+<body>
+	
+    <div class="center">
+    
+<div id="input">
+
+	<div id="Instructions">
+		<h6>
+       <u>Infusion number</u>: <span id='theTrial'><script>document.write(trial)</script></span> 
+       <br /> 
+        <br />
+        Instructions:&nbsp;
+        <span id="instruction">Please select drug. <br /><br/>
+        Press <b>Up/Down</b> arrow keys to select and <b>Enter</b> to confirm drug type.</span></h6>
+   
+    </div>
+	<form id="inputForm">
+	 
+  <div class="selectItem" id="drug" > 
+  	<div class="fieldLabel"  style="width:290px;">Drug:&nbsp; 
+    <span id="drugName"></span>
+        <select id="drugList"></select>
+        <button type="button" id="drugConfirm" >Confirm</button>
+    </div>
+    <div class="fieldLabel" style="width:200px;">&nbsp;&nbsp;&nbsp; Risk Level:   
+    <span id="riskFrame"> </span></div>
+  </div>
+  
+  <div class="selectItem" id="numVals" > 
+  	<div class="fieldLabel"  style="width:300px;">Number of Values:&nbsp; 
+    <span id="numValues"></span>
+        <select id="numberOfValues">
+        	<option value="2" selected="selected" name="2">2</option>
+            <option value="3" name="3">3</option>
+        </select>
+        <button type="button" id="numValuesConfirm" >Confirm</button>
+    </div>
+  </div>
+  
+  <div class="item" id="vtbi" hidden="true">
+		<div class="fieldLabel" >Enter VTBI: </div>  
+  		<div class="fieldValue" id="theVTBINumber" contenteditable="true"> 0.0 </div>&nbsp;mL
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" id="vtbiConfirm" >Confirm</button>
+   </div>
+       
+  <div class="item" id="rate" hidden="true">
+		<div class="fieldLabel" >Enter Rate: </div>  
+  		<div class="fieldValue" id="theRateNumber" contenteditable="true"> 0.0 </div>
+        &nbsp;mL/min
+        &nbsp;<button type="button" id="rateConfirm" >Confirm</button>
+   </div>
+  
+  <div class="item" id="time" hidden="true">
+		<div class="fieldLabel" >Enter Time: </div>  
+  		<div class="fieldValue" id="theTimeNumber" contenteditable="true"> 0 </div>&nbsp; min
+        &nbsp;&nbsp;
+        <button type="button" id="timeConfirm" >Confirm</button>
+  </div>
+   
+  <div id="finalizeRx" hidden="true" >
+  		<button type="button" id="confirmRx" >Finalize Infusion</button>
+  </div>
+   
+	</form>
+   <div id="csv"></div>
+	</div>
+   
+   </div>
+   
+   <div id="gc-overlay" style="display:none;"></div>
+</body>
+</html>
