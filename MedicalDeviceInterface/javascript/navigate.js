@@ -2,6 +2,9 @@ var timeOffset;
 var myTime = 0;
 var calcTime = 0;
 
+var dataEntryStart;
+var dataEntryDuration;
+
 window.onload = function(event) {
   timeOffset=event.timeStamp;
 }
@@ -181,6 +184,7 @@ function enableNumVals(){
 function disableVTBI(){
     $("#theVTBINumber").prop('contentEditable',false);
 	$("#vtbiConfirm").prop('disabled',true);
+	$("#vtbiConfirm").html('Confirmed');
 }
 
 function enableVTBI(){
@@ -192,6 +196,7 @@ function enableVTBI(){
 function disableRate(){
 	$("#theRateNumber").prop('contentEditable',false);
 	$("#rateConfirm").prop('disabled',true);
+	$("#rateConfirm").html('Confirmed');
 }
 
 function enableRate(){
@@ -203,6 +208,7 @@ function enableRate(){
 function disableTime(){
 	$("#theTimeNumber").prop('contentEditable',false);
 	$("#timeConfirm").prop('disabled',true);
+	$("#rateConfirm").html('Confirmed');
 }
 
 function enableTime(){
@@ -300,6 +306,9 @@ $("document").ready(function() {
 					currentState++;
 					selectField();
 					
+					//record time start of data entry
+					dataEntryStart = e.timeStamp;
+					
 				}else{
 					e.stopImmediatePropagation();
 					e.preventDefault();
@@ -330,7 +339,12 @@ $("document").ready(function() {
 			$('#rateConfirm').click(function (e) {
 				if(confirm("Confirm Rate value?")){
 					currentRateVal = dose;
+					
+					if(stages[4]==5){
+						enableFinalize();
+					}else
 					enableTime();
+    					
 					disableRate();
 					
 					rateEntered=true;
