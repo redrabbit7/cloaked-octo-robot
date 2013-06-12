@@ -229,7 +229,7 @@ function enableFinalize(){
 
 //This variable stores everything you want to be in the csv file. This first bit lists the headings that will be at the top.
 var csv = "Target VTBI, Target Rate, Target Type, Key Press, Current Number, Time, First Seen Number<br/>";
-var csv2 = "Target VTBI, Target Rate, Target Type, Key Press, Current Number, Time, First Seen Number, Dose Entered%0A";
+var csv2 = "Target VTBI, Target Rate, Target Type, Key Press, Current Number, Time, First Seen Number, Dose Entered, Data Entry Start%0A";
 
 $("document").ready(function() {
 	
@@ -619,7 +619,7 @@ $("document").ready(function() {
     			}
     			
     			csv=csv+targetV+','+targetR+','+currDiv+','+key+','+amount+','+(e.timeStamp-timeOffset)/1000+','+firstSeen+'<br/>';
-    			csv2=csv2+targetV+','+targetR+','+type+','+key+','+amount+','+(e.timeStamp-timeOffset)/1000+','+firstSeen+','+dose+"%0A";
+    			csv2=csv2+targetV+','+targetR+','+type+','+key+','+amount+','+(e.timeStamp-timeOffset)/1000+','+firstSeen+','+dose+','+dataEntryStart+"%0A";
     			
     			key="";
     			//At the bottom of the page csv is updating. You need to copy and paste this into excel. Then click on the "data" button in the ribbon and 
