@@ -1,0 +1,6 @@
+Rotary folder contains current code uploaded onto the rotary encoder front panel
+EventKeypad folder contains current code uploaded onto the 4x4 front panel
+
+required_arduino_libraries folder contains [edited] opensource libraries used by the rotary and eventkeypad sketches.
+
+direct any comments or questions to p.oladimeji@swansea.ac.uk
