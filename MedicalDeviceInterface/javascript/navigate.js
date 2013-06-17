@@ -3,7 +3,7 @@ var myTime = 0;
 var calcTime = 0;
 
 var dataEntryStart;
-var dataEntryDuration;
+var dataEntryEnd;
 
 window.onload = function(event) {
   timeOffset=event.timeStamp;
@@ -633,6 +633,7 @@ $("document").ready(function() {
                 {
                     window.onload = document.getElementById('gc-overlay').style.display = 'block';
                     window.location.href = "data:application/csv;charset=utf-8,"+csv2;
+                    
                   	stopped=true; //end session
     				
     				alert("END OF TRIAL. Thanks for your participation!");

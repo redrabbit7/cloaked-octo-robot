@@ -1,0 +1,137 @@
+11:52:45,391  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+11:52:45,398  INFO ArduinoSerialListener:107 - 
+11:52:45,399  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+11:52:45,399  INFO ArduinoSerialListener:107 - 
+11:52:45,402  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+11:52:45,402  INFO ArduinoSerialListener:107 - 
+11:52:45,402  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+11:52:45,402  INFO ArduinoSerialListener:107 - 
+11:53:22,427  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+11:53:22,430  INFO ArduinoSerialListener:107 - 
+11:53:22,431  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+11:53:22,431  INFO ArduinoSerialListener:107 - 
+11:53:22,436  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+11:53:22,436  INFO ArduinoSerialListener:107 - 
+11:53:22,436  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+11:53:22,437  INFO ArduinoSerialListener:107 - 
+11:53:22,437  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+11:53:22,437  INFO ArduinoSerialListener:107 - 
+11:53:22,437  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+11:53:22,438  INFO ArduinoSerialListener:107 - 
+11:53:29,646  INFO ArduinoSerialListener:155 - knob released
+11:53:37,388  INFO ArduinoSerialListener:155 - power pressed
+11:53:37,676  INFO ArduinoSerialListener:155 - power released
+11:59:05,617  INFO ArduinoSerialListener:155 - power pressed
+11:59:05,888  INFO ArduinoSerialListener:155 - power released
+12:01:03,979  INFO ArduinoSerialListener:155 - power pressed
+12:01:04,234  INFO ArduinoSerialListener:155 - power released
+12:01:10,777  INFO ArduinoSerialListener:155 - start pressed
+12:01:11,033  INFO ArduinoSerialListener:155 - start released
+12:01:13,785  INFO ArduinoSerialListener:155 - option pressed
+12:01:14,041  INFO ArduinoSerialListener:155 - option released
+12:01:15,432  INFO ArduinoSerialListener:155 - option pressed
+12:01:15,656  INFO ArduinoSerialListener:155 - option released
+12:01:17,976  INFO ArduinoSerialListener:155 - power pressed
+12:01:18,200  INFO ArduinoSerialListener:155 - power released
+12:01:18,616  INFO ArduinoSerialListener:155 - power pressed
+12:01:18,792  INFO ArduinoSerialListener:155 - power released
+12:04:19,243  INFO ArduinoSerialListener:106 - /dev/tty.usbmodem1a21
+12:04:19,246  INFO ArduinoSerialListener:107 - 
+12:04:19,247  INFO ArduinoSerialListener:106 - /dev/cu.usbmodem1a21
+12:04:19,247  INFO ArduinoSerialListener:107 - 
+12:04:19,249  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+12:04:19,249  INFO ArduinoSerialListener:107 - 
+12:04:19,250  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+12:04:19,250  INFO ArduinoSerialListener:107 - 
+12:04:19,250  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+12:04:19,250  INFO ArduinoSerialListener:107 - 
+12:04:19,250  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+12:04:19,250  INFO ArduinoSerialListener:107 - 
+12:04:44,501  INFO ArduinoSerialListener:155 - 2 PRESSED
+12:04:44,722  INFO ArduinoSerialListener:155 - 2 RELEASED
+12:04:46,037  INFO ArduinoSerialListener:155 - 2 PRESSED
+12:04:46,229  INFO ArduinoSerialListener:155 - 2 RELEASED
+12:04:48,924  INFO ArduinoSerialListener:155 - 5 PRESSED
+12:04:49,113  INFO ArduinoSerialListener:155 - 5 RELEASED
+12:04:49,444  INFO ArduinoSerialListener:155 - 5 PRESSED
+12:04:49,567  INFO ArduinoSerialListener:155 - 5 RELEASED
+12:04:51,734  INFO ArduinoSerialListener:155 - 1 PRESSED
+12:04:51,910  INFO ArduinoSerialListener:155 - 1 RELEASED
+12:04:52,795  INFO ArduinoSerialListener:155 - 1 PRESSED
+12:04:52,897  INFO ArduinoSerialListener:155 - 1 RELEASED
+12:04:54,974  INFO ArduinoSerialListener:155 - 1 PRESSED
+12:04:55,084  INFO ArduinoSerialListener:155 - 1 RELEASED
+12:04:56,587  INFO ArduinoSerialListener:155 - 2 PRESSED
+12:04:56,722  INFO ArduinoSerialListener:155 - 2 RELEASED
+12:04:59,872  INFO ArduinoSerialListener:155 - 4 PRESSED
+12:05:00,171  INFO ArduinoSerialListener:155 - 4 RELEASED
+12:05:00,416  INFO ArduinoSerialListener:155 - 4 PRESSED
+12:05:02,649  INFO ArduinoSerialListener:155 - 4 RELEASED
+12:05:03,288  INFO ArduinoSerialListener:155 - 4 PRESSED
+12:05:05,278  INFO ArduinoSerialListener:155 - 4 RELEASED
+12:05:05,303  INFO ArduinoSerialListener:155 - 4 PRESSED
+12:05:05,336  INFO ArduinoSerialListener:155 - 4 RELEASED
+12:05:16,128  INFO ArduinoSerialListener:155 - start pressed
+12:05:16,320  INFO ArduinoSerialListener:155 - start released
+12:05:18,736  INFO ArduinoSerialListener:155 - 3 PRESSED
+12:05:18,851  INFO ArduinoSerialListener:155 - 3 RELEASED
+12:05:24,286  INFO ArduinoSerialListener:155 - pause pressed
+12:05:24,511  INFO ArduinoSerialListener:155 - pause released
+13:37:50,760  INFO ArduinoSerialListener:155 - power pressed
+13:37:51,067  INFO ArduinoSerialListener:155 - power released
+13:37:51,395  INFO ArduinoSerialListener:155 - power pressed
+13:37:51,551  INFO ArduinoSerialListener:155 - power released
+13:37:55,577  INFO ArduinoSerialListener:155 - 1 PRESSED
+13:37:55,600  INFO ArduinoSerialListener:155 - 1 RELEASED
+13:37:55,621  INFO ArduinoSerialListener:155 - 1 PRESSED
+13:37:55,773  INFO ArduinoSerialListener:155 - 1 RELEASED
+13:37:57,211  INFO ArduinoSerialListener:155 - 3 PRESSED
+13:37:57,399  INFO ArduinoSerialListener:155 - 3 RELEASED
+13:38:02,797  INFO ArduinoSerialListener:155 - 2 PRESSED
+13:38:02,908  INFO ArduinoSerialListener:155 - 2 RELEASED
+13:38:04,657  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:07,434  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:10,403  INFO ArduinoSerialListener:155 - 1 PRESSED
+13:38:10,526  INFO ArduinoSerialListener:155 - 1 RELEASED
+13:38:10,548  INFO ArduinoSerialListener:155 - 1 PRESSED
+13:38:10,570  INFO ArduinoSerialListener:155 - 1 RELEASED
+13:38:12,881  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:13,062  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:13,159  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:13,270  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:13,401  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:13,525  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:13,547  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:13,569  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:13,655  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:13,770  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:13,792  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:13,814  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:13,901  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:14,044  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:14,232  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:14,441  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:14,585  INFO ArduinoSerialListener:155 - 4 PRESSED
+13:38:14,773  INFO ArduinoSerialListener:155 - 4 RELEASED
+13:38:15,761  INFO ArduinoSerialListener:155 - start pressed
+13:38:15,879  INFO ArduinoSerialListener:155 - start released
+13:39:40,355  INFO ArduinoSerialListener:155 - 3 PRESSED
+13:39:40,523  INFO ArduinoSerialListener:155 - 3 RELEASED
+13:41:32,731  INFO ArduinoSerialListener:155 - 1 PRESSED
+13:41:32,776  INFO ArduinoSerialListener:155 - 1 RELEASED
+13:41:35,516  INFO ArduinoSerialListener:155 - 1 PRESSED
+13:41:35,594  INFO ArduinoSerialListener:155 - 1 RELEASED
+13:41:36,282  INFO ArduinoSerialListener:155 - 3 PRESSED
+13:41:36,380  INFO ArduinoSerialListener:155 - 3 RELEASED
+13:41:44,207  INFO ArduinoSerialListener:155 - option pressed
+13:41:44,371  INFO ArduinoSerialListener:155 - option released
+13:43:08,802  INFO ArduinoSerialListener:155 - start pressed
+13:43:08,921  INFO ArduinoSerialListener:155 - start released
+13:49:52,124  INFO ArduinoSerialListener:155 - 3 PRESSED
+13:49:52,157  INFO ArduinoSerialListener:155 - 3 RELEASED
+13:49:52,179  INFO ArduinoSerialListener:155 - 3 PRESSED
+13:49:52,238  INFO ArduinoSerialListener:155 - 3 RELEASED
+13:49:52,261  INFO ArduinoSerialListener:155 - 3 PRESSED
+13:49:52,403  INFO ArduinoSerialListener:155 - 3 RELEASED
+13:49:54,680  INFO ArduinoSerialListener:155 - pause pressed
+13:49:54,894  INFO ArduinoSerialListener:155 - pause released

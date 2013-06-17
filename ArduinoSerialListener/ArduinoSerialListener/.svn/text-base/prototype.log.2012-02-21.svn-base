@@ -1,0 +1,89 @@
+13:38:16,081  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+13:38:16,096  INFO ArduinoSerialListener:107 - 
+13:38:16,096  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+13:38:16,097  INFO ArduinoSerialListener:107 - 
+13:38:16,101  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+13:38:16,101  INFO ArduinoSerialListener:107 - 
+13:38:16,102  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+13:38:16,102  INFO ArduinoSerialListener:107 - 
+13:38:16,102  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+13:38:16,102  INFO ArduinoSerialListener:107 - 
+13:38:16,103  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+13:38:16,103  INFO ArduinoSerialListener:107 - 
+13:38:30,132  INFO ArduinoSerialListener:155 - knob released
+13:38:45,602  INFO ArduinoSerialListener:155 - knob pressed
+13:38:45,858  INFO ArduinoSerialListener:155 - knob released
+13:38:46,721  INFO ArduinoSerialListener:155 - knob pressed
+13:38:47,013  INFO ArduinoSerialListener:155 - knob released
+13:54:15,986  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+13:54:16,005  INFO ArduinoSerialListener:107 - 
+13:54:16,005  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+13:54:16,006  INFO ArduinoSerialListener:107 - 
+13:54:16,010  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+13:54:16,010  INFO ArduinoSerialListener:107 - 
+13:54:16,011  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+13:54:16,011  INFO ArduinoSerialListener:107 - 
+13:54:16,011  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+13:54:16,011  INFO ArduinoSerialListener:107 - 
+13:54:16,012  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+13:54:16,012  INFO ArduinoSerialListener:107 - 
+13:54:39,556  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+13:54:39,579  INFO ArduinoSerialListener:107 - 
+13:54:39,580  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+13:54:39,580  INFO ArduinoSerialListener:107 - 
+13:54:39,585  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+13:54:39,586  INFO ArduinoSerialListener:107 - 
+13:54:39,586  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+13:54:39,586  INFO ArduinoSerialListener:107 - 
+13:54:39,586  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+13:54:39,587  INFO ArduinoSerialListener:107 - 
+13:54:39,587  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+13:54:39,587  INFO ArduinoSerialListener:107 - 
+14:00:54,381  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+14:00:54,402  INFO ArduinoSerialListener:107 - 
+14:00:54,402  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+14:00:54,402  INFO ArduinoSerialListener:107 - 
+14:00:54,405  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:00:54,405  INFO ArduinoSerialListener:107 - 
+14:00:54,406  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:00:54,406  INFO ArduinoSerialListener:107 - 
+14:00:54,406  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:00:54,406  INFO ArduinoSerialListener:107 - 
+14:00:54,406  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:00:54,406  INFO ArduinoSerialListener:107 - 
+14:05:16,340  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+14:05:16,370  INFO ArduinoSerialListener:107 - 
+14:05:16,370  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+14:05:16,370  INFO ArduinoSerialListener:107 - 
+14:05:16,373  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:05:16,373  INFO ArduinoSerialListener:107 - 
+14:05:16,373  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:05:16,374  INFO ArduinoSerialListener:107 - 
+14:05:16,374  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:05:16,374  INFO ArduinoSerialListener:107 - 
+14:05:16,374  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:05:16,374  INFO ArduinoSerialListener:107 - 
+14:06:05,947  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+14:06:05,977  INFO ArduinoSerialListener:107 - 
+14:06:05,977  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+14:06:05,978  INFO ArduinoSerialListener:107 - 
+14:06:05,983  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:06:05,983  INFO ArduinoSerialListener:107 - 
+14:06:05,983  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:06:05,984  INFO ArduinoSerialListener:107 - 
+14:06:05,984  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:06:05,984  INFO ArduinoSerialListener:107 - 
+14:06:05,984  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:06:05,985  INFO ArduinoSerialListener:107 - 
+14:21:09,535  INFO ArduinoSerialListener:106 - /dev/tty.usbserial-A6004aUK
+14:21:09,560  INFO ArduinoSerialListener:107 - 
+14:21:09,561  INFO ArduinoSerialListener:106 - /dev/cu.usbserial-A6004aUK
+14:21:09,561  INFO ArduinoSerialListener:107 - 
+14:21:09,566  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:21:09,566  INFO ArduinoSerialListener:107 - 
+14:21:09,567  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:21:09,567  INFO ArduinoSerialListener:107 - 
+14:21:09,567  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:21:09,567  INFO ArduinoSerialListener:107 - 
+14:21:09,568  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:21:09,568  INFO ArduinoSerialListener:107 - 

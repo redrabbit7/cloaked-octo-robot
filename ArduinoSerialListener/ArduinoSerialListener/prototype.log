@@ -1,0 +1,140 @@
+13:56:10,688  INFO ArduinoSerialListener:98 - /dev/tty.usbmodemfd1311
+13:56:10,736  INFO ArduinoSerialListener:99 - 
+13:56:10,737  INFO ArduinoSerialListener:98 - /dev/cu.usbmodemfd1311
+13:56:10,737  INFO ArduinoSerialListener:99 - 
+13:56:10,752  INFO ArduinoSerialListener:98 - /dev/tty.Bluetooth-PDA-Sync
+13:56:10,752  INFO ArduinoSerialListener:99 - 
+13:56:10,753  INFO ArduinoSerialListener:98 - /dev/cu.Bluetooth-PDA-Sync
+13:56:10,754  INFO ArduinoSerialListener:99 - 
+13:56:10,754  INFO ArduinoSerialListener:98 - /dev/tty.Bluetooth-Modem
+13:56:10,754  INFO ArduinoSerialListener:99 - 
+13:56:10,758  INFO ArduinoSerialListener:98 - /dev/cu.Bluetooth-Modem
+13:56:10,759  INFO ArduinoSerialListener:99 - 
+13:56:29,477  INFO ArduinoSerialListener:147 - powstart pressed
+13:56:29,479 ERROR ArduinoSerialListener:192 - 
+java.lang.NullPointerException
+	at eu.fitlab.serial.ArduinoSerialListener.serialEvent(ArduinoSerialListener.java:160)
+	at gnu.io.RXTXPort.sendEvent(RXTXPort.java:732)
+	at gnu.io.RXTXPort.eventLoop(Native Method)
+	at gnu.io.RXTXPort$MonitorThread.run(RXTXPort.java:1575)
+13:56:29,694  INFO ArduinoSerialListener:147 - start released
+13:56:30,559  INFO ArduinoSerialListener:147 - start pressed
+13:56:30,759  INFO ArduinoSerialListener:147 - start released
+13:56:31,525  INFO ArduinoSerialListener:147 - start pressed
+13:56:31,705  INFO ArduinoSerialListener:147 - start released
+13:56:32,188  INFO ArduinoSerialListener:147 - start pressed
+13:56:32,360  INFO ArduinoSerialListener:147 - start released
+13:56:33,458  INFO ArduinoSerialListener:147 - option pressed
+13:56:33,634  INFO ArduinoSerialListener:147 - option released
+13:56:34,146  INFO ArduinoSerialListener:147 - option pressed
+13:56:34,327  INFO ArduinoSerialListener:147 - option released
+13:56:34,372  INFO ArduinoSerialListener:147 - option pressed
+13:56:34,478  INFO ArduinoSerialListener:147 - option released
+13:56:34,970  INFO ArduinoSerialListener:147 - option pressed
+13:56:35,080  INFO ArduinoSerialListener:147 - option released
+13:56:35,248  INFO ArduinoSerialListener:147 - option pressed
+13:56:35,413  INFO ArduinoSerialListener:147 - option released
+13:56:35,965  INFO ArduinoSerialListener:147 - option pressed
+13:56:36,080  INFO ArduinoSerialListener:147 - option released
+13:56:36,276  INFO ArduinoSerialListener:147 - option pressed
+13:56:36,411  INFO ArduinoSerialListener:147 - option released
+13:56:36,620  INFO ArduinoSerialListener:147 - option pressed
+13:56:36,710  INFO ArduinoSerialListener:147 - option released
+13:56:36,845  INFO ArduinoSerialListener:147 - option pressed
+13:56:36,927  INFO ArduinoSerialListener:147 - option released
+13:56:37,263  INFO ArduinoSerialListener:147 - option pressed
+13:56:37,398  INFO ArduinoSerialListener:147 - option released
+13:56:37,509  INFO ArduinoSerialListener:147 - option pressed
+13:56:37,652  INFO ArduinoSerialListener:147 - option released
+13:56:41,588  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:41,611  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:41,633  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:41,735  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:42,030  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:42,088  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:42,121  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:42,141  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:42,461  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:42,482  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:42,759  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:42,850  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:43,022  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:43,103  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:43,276  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:43,353  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:43,485  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:43,587  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:43,751  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:43,874  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:43,992  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:44,115  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:44,226  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:44,349  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:44,447  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:44,558  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:44,656  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:44,799  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:45,393  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:45,483  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:45,671  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:45,815  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:45,979  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:46,101  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:46,220  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:46,355  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:46,487  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:46,617  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:46,749  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:46,884  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:47,035  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:47,158  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:47,281  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:47,401  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:47,510  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:47,634  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:47,752  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:47,875  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:47,998  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:48,116  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:48,239  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:48,338  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:49,145  INFO ArduinoSerialListener:147 - W PRESSED
+13:56:49,276  INFO ArduinoSerialListener:147 - W RELEASED
+13:56:51,446  INFO ArduinoSerialListener:147 - 3 PRESSED
+13:56:51,602  INFO ArduinoSerialListener:147 - 3 RELEASED
+13:56:51,864  INFO ArduinoSerialListener:147 - 3 PRESSED
+13:56:51,987  INFO ArduinoSerialListener:147 - 3 RELEASED
+13:56:52,143  INFO ArduinoSerialListener:147 - 3 PRESSED
+13:56:52,253  INFO ArduinoSerialListener:147 - 3 RELEASED
+13:56:52,405  INFO ArduinoSerialListener:147 - 3 PRESSED
+13:56:52,495  INFO ArduinoSerialListener:147 - 3 RELEASED
+13:56:52,626  INFO ArduinoSerialListener:147 - 3 PRESSED
+13:56:52,737  INFO ArduinoSerialListener:147 - 3 RELEASED
+13:56:52,880  INFO ArduinoSerialListener:147 - 3 PRESSED
+13:56:53,015  INFO ArduinoSerialListener:147 - 3 RELEASED
+13:56:54,567  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:54,711  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:54,866  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:54,997  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:55,116  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:55,239  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:55,362  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:55,485  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:55,583  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:55,694  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:55,845  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:55,980  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:56,287  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:56,464  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:56,738  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:56,828  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:57,577  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:57,713  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:58,172  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:58,262  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:58,790  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:58,900  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:59,232  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:59,398  INFO ArduinoSerialListener:147 - 6 RELEASED
+13:56:59,662  INFO ArduinoSerialListener:147 - 6 PRESSED
+13:56:59,719  INFO ArduinoSerialListener:147 - 6 RELEASED

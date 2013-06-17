@@ -1,0 +1,99 @@
+17:55:41,544  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-PDA-Sync
+17:55:41,601  INFO ArduinoSerialListener:109 - 
+17:55:41,601  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-PDA-Sync
+17:55:41,601  INFO ArduinoSerialListener:109 - 
+17:55:41,635  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-Modem
+17:55:41,635  INFO ArduinoSerialListener:109 - 
+17:55:41,635  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-Modem
+17:55:41,636  INFO ArduinoSerialListener:109 - 
+17:55:45,092  INFO ArduinoSerialListener:320 - initialised Display Object
+17:55:45,093  INFO ArduinoSerialListener:324 - about to create ui elements
+17:56:07,116  INFO ArduinoSerialListener:326 - created ui elements
+17:57:08,296  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-PDA-Sync
+17:57:08,299  INFO ArduinoSerialListener:109 - 
+17:57:08,299  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-PDA-Sync
+17:57:08,299  INFO ArduinoSerialListener:109 - 
+17:57:08,302  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-Modem
+17:57:08,302  INFO ArduinoSerialListener:109 - 
+17:57:08,302  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-Modem
+17:57:08,302  INFO ArduinoSerialListener:109 - 
+18:00:13,219  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-PDA-Sync
+18:00:13,221  INFO ArduinoSerialListener:109 - 
+18:00:13,222  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-PDA-Sync
+18:00:13,222  INFO ArduinoSerialListener:109 - 
+18:00:13,224  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-Modem
+18:00:13,224  INFO ArduinoSerialListener:109 - 
+18:00:13,225  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-Modem
+18:00:13,225  INFO ArduinoSerialListener:109 - 
+19:08:08,685  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-PDA-Sync
+19:08:08,687  INFO ArduinoSerialListener:109 - 
+19:08:08,687  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-PDA-Sync
+19:08:08,688  INFO ArduinoSerialListener:109 - 
+19:08:08,690  INFO ArduinoSerialListener:108 - /dev/tty.Bluetooth-Modem
+19:08:08,690  INFO ArduinoSerialListener:109 - 
+19:08:08,690  INFO ArduinoSerialListener:108 - /dev/cu.Bluetooth-Modem
+19:08:08,691  INFO ArduinoSerialListener:109 - 
+19:21:32,331  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-PDA-Sync
+19:21:32,334  INFO ArduinoSerialListener:98 - 
+19:21:32,334  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-PDA-Sync
+19:21:32,334  INFO ArduinoSerialListener:98 - 
+19:21:32,337  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-Modem
+19:21:32,337  INFO ArduinoSerialListener:98 - 
+19:21:32,337  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-Modem
+19:21:32,337  INFO ArduinoSerialListener:98 - 
+19:26:47,146  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-PDA-Sync
+19:26:47,148  INFO ArduinoSerialListener:98 - 
+19:26:47,148  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-PDA-Sync
+19:26:47,149  INFO ArduinoSerialListener:98 - 
+19:26:47,151  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-Modem
+19:26:47,151  INFO ArduinoSerialListener:98 - 
+19:26:47,151  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-Modem
+19:26:47,152  INFO ArduinoSerialListener:98 - 
+19:28:55,333  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-PDA-Sync
+19:28:55,335  INFO ArduinoSerialListener:98 - 
+19:28:55,336  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-PDA-Sync
+19:28:55,336  INFO ArduinoSerialListener:98 - 
+19:28:55,338  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-Modem
+19:28:55,339  INFO ArduinoSerialListener:98 - 
+19:28:55,339  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-Modem
+19:28:55,339  INFO ArduinoSerialListener:98 - 
+19:29:28,417  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-PDA-Sync
+19:29:28,420  INFO ArduinoSerialListener:98 - 
+19:29:28,420  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-PDA-Sync
+19:29:28,420  INFO ArduinoSerialListener:98 - 
+19:29:28,423  INFO ArduinoSerialListener:97 - /dev/tty.Bluetooth-Modem
+19:29:28,423  INFO ArduinoSerialListener:98 - 
+19:29:28,423  INFO ArduinoSerialListener:97 - /dev/cu.Bluetooth-Modem
+19:29:28,423  INFO ArduinoSerialListener:98 - 
+19:43:41,837  INFO ArduinoSerialListener:100 - /dev/tty.Bluetooth-PDA-Sync
+19:43:41,854  INFO ArduinoSerialListener:101 - 
+19:43:41,854  INFO ArduinoSerialListener:100 - /dev/cu.Bluetooth-PDA-Sync
+19:43:41,854  INFO ArduinoSerialListener:101 - 
+19:43:41,857  INFO ArduinoSerialListener:100 - /dev/tty.Bluetooth-Modem
+19:43:41,857  INFO ArduinoSerialListener:101 - 
+19:43:41,857  INFO ArduinoSerialListener:100 - /dev/cu.Bluetooth-Modem
+19:43:41,857  INFO ArduinoSerialListener:101 - 
+19:48:11,471  INFO ArduinoSerialListener:101 - /dev/tty.Bluetooth-PDA-Sync
+19:48:11,488  INFO ArduinoSerialListener:102 - 
+19:48:11,489  INFO ArduinoSerialListener:101 - /dev/cu.Bluetooth-PDA-Sync
+19:48:11,489  INFO ArduinoSerialListener:102 - 
+19:48:11,494  INFO ArduinoSerialListener:101 - /dev/tty.Bluetooth-Modem
+19:48:11,495  INFO ArduinoSerialListener:102 - 
+19:48:11,495  INFO ArduinoSerialListener:101 - /dev/cu.Bluetooth-Modem
+19:48:11,495  INFO ArduinoSerialListener:102 - 
+19:49:04,230  INFO ArduinoSerialListener:101 - /dev/tty.Bluetooth-PDA-Sync
+19:49:04,233  INFO ArduinoSerialListener:102 - 
+19:49:04,233  INFO ArduinoSerialListener:101 - /dev/cu.Bluetooth-PDA-Sync
+19:49:04,233  INFO ArduinoSerialListener:102 - 
+19:49:04,235  INFO ArduinoSerialListener:101 - /dev/tty.Bluetooth-Modem
+19:49:04,236  INFO ArduinoSerialListener:102 - 
+19:49:04,236  INFO ArduinoSerialListener:101 - /dev/cu.Bluetooth-Modem
+19:49:04,236  INFO ArduinoSerialListener:102 - 
+19:49:28,806  INFO ArduinoSerialListener:101 - /dev/tty.Bluetooth-PDA-Sync
+19:49:28,808  INFO ArduinoSerialListener:102 - 
+19:49:28,808  INFO ArduinoSerialListener:101 - /dev/cu.Bluetooth-PDA-Sync
+19:49:28,809  INFO ArduinoSerialListener:102 - 
+19:49:28,811  INFO ArduinoSerialListener:101 - /dev/tty.Bluetooth-Modem
+19:49:28,812  INFO ArduinoSerialListener:102 - 
+19:49:28,812  INFO ArduinoSerialListener:101 - /dev/cu.Bluetooth-Modem
+19:49:28,812  INFO ArduinoSerialListener:102 - 

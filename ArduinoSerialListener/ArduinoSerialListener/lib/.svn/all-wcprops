@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/cspo/!svn/ver/967/ArduinoSerialListener/lib
+END
+rxtxSerial.dll
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/cspo/!svn/ver/933/ArduinoSerialListener/lib/rxtxSerial.dll
+END
+librxtxSerial.jnilib
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/cspo/!svn/ver/933/ArduinoSerialListener/lib/librxtxSerial.jnilib
+END
+swt.jar
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/cspo/!svn/ver/967/ArduinoSerialListener/lib/swt.jar
+END
+RXTXcomm.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/cspo/!svn/ver/933/ArduinoSerialListener/lib/RXTXcomm.jar
+END
+rxtxParallel.dll
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/cspo/!svn/ver/933/ArduinoSerialListener/lib/rxtxParallel.dll
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/cspo/!svn/ver/933/ArduinoSerialListener/lib/README
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/cspo/!svn/ver/933/ArduinoSerialListener/lib/log4j-1.2.16.jar
+END
