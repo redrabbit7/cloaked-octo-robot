@@ -1,0 +1,155 @@
+14:14:18,008  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:14:18,023  INFO ArduinoSerialListener:107 - 
+14:14:18,023  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:14:18,023  INFO ArduinoSerialListener:107 - 
+14:14:18,027  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:14:18,027  INFO ArduinoSerialListener:107 - 
+14:14:18,027  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:14:18,027  INFO ArduinoSerialListener:107 - 
+14:16:10,756  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:16:10,759  INFO ArduinoSerialListener:107 - 
+14:16:10,759  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:16:10,759  INFO ArduinoSerialListener:107 - 
+14:16:10,762  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:16:10,762  INFO ArduinoSerialListener:107 - 
+14:16:10,762  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:16:10,762  INFO ArduinoSerialListener:107 - 
+14:18:53,622  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:18:53,632  INFO ArduinoSerialListener:107 - 
+14:18:53,632  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:18:53,633  INFO ArduinoSerialListener:107 - 
+14:18:53,635  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:18:53,636  INFO ArduinoSerialListener:107 - 
+14:18:53,636  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:18:53,636  INFO ArduinoSerialListener:107 - 
+14:18:53,994  INFO ArduinoSerialListener:324 - initialised Display Object
+14:18:54,002  INFO ArduinoSerialListener:328 - about to create ui elements
+14:19:58,145  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:19:58,148  INFO ArduinoSerialListener:107 - 
+14:19:58,148  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:19:58,148  INFO ArduinoSerialListener:107 - 
+14:19:58,151  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:19:58,151  INFO ArduinoSerialListener:107 - 
+14:19:58,152  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:19:58,152  INFO ArduinoSerialListener:107 - 
+14:19:59,177  INFO ArduinoSerialListener:325 - initialised Display Object
+14:19:59,183  INFO ArduinoSerialListener:329 - about to create ui elements
+14:20:20,230  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:20:20,233  INFO ArduinoSerialListener:107 - 
+14:20:20,233  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:20:20,233  INFO ArduinoSerialListener:107 - 
+14:20:20,240  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:20:20,240  INFO ArduinoSerialListener:107 - 
+14:20:20,240  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:20:20,240  INFO ArduinoSerialListener:107 - 
+14:20:20,677  INFO ArduinoSerialListener:325 - initialised Display Object
+14:20:20,683  INFO ArduinoSerialListener:329 - about to create ui elements
+14:20:35,074  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:20:35,078  INFO ArduinoSerialListener:107 - 
+14:20:35,078  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:20:35,078  INFO ArduinoSerialListener:107 - 
+14:20:35,081  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:20:35,081  INFO ArduinoSerialListener:107 - 
+14:20:35,082  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:20:35,082  INFO ArduinoSerialListener:107 - 
+14:20:35,472  INFO ArduinoSerialListener:325 - initialised Display Object
+14:20:57,150  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:20:57,153  INFO ArduinoSerialListener:107 - 
+14:20:57,153  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:20:57,154  INFO ArduinoSerialListener:107 - 
+14:20:57,157  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:20:57,157  INFO ArduinoSerialListener:107 - 
+14:20:57,157  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:20:57,157  INFO ArduinoSerialListener:107 - 
+14:20:57,617  INFO ArduinoSerialListener:325 - initialised Display Object
+14:20:57,629  INFO ArduinoSerialListener:329 - about to create ui elements
+14:21:16,683  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:21:16,686  INFO ArduinoSerialListener:107 - 
+14:21:16,686  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:21:16,686  INFO ArduinoSerialListener:107 - 
+14:21:16,688  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:21:16,689  INFO ArduinoSerialListener:107 - 
+14:21:16,689  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:21:16,689  INFO ArduinoSerialListener:107 - 
+14:21:17,048  INFO ArduinoSerialListener:325 - initialised Display Object
+14:21:17,055  INFO ArduinoSerialListener:329 - about to create ui elements
+14:21:43,926  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:21:43,929  INFO ArduinoSerialListener:107 - 
+14:21:43,929  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:21:43,929  INFO ArduinoSerialListener:107 - 
+14:21:43,932  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:21:43,932  INFO ArduinoSerialListener:107 - 
+14:21:43,932  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:21:43,932  INFO ArduinoSerialListener:107 - 
+14:21:44,330  INFO ArduinoSerialListener:325 - initialised Display Object
+14:21:44,331  INFO ArduinoSerialListener:329 - about to create ui elements
+14:21:44,407  INFO ArduinoSerialListener:243 - created shell
+14:21:49,260  INFO ArduinoSerialListener:331 - created ui elements
+14:29:07,367  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:29:07,408  INFO ArduinoSerialListener:107 - 
+14:29:07,409  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:29:07,409  INFO ArduinoSerialListener:107 - 
+14:29:07,412  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:29:07,412  INFO ArduinoSerialListener:107 - 
+14:29:07,412  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:29:07,413  INFO ArduinoSerialListener:107 - 
+14:35:13,809  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:35:13,811  INFO ArduinoSerialListener:107 - 
+14:35:13,812  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:35:13,812  INFO ArduinoSerialListener:107 - 
+14:35:13,814  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:35:13,815  INFO ArduinoSerialListener:107 - 
+14:35:13,815  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:35:13,815  INFO ArduinoSerialListener:107 - 
+14:35:14,652  INFO ArduinoSerialListener:325 - initialised Display Object
+14:35:14,652  INFO ArduinoSerialListener:329 - about to create ui elements
+14:35:14,707  INFO ArduinoSerialListener:244 - created shell
+14:35:18,402  INFO ArduinoSerialListener:331 - created ui elements
+14:45:30,644  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+14:45:30,664  INFO ArduinoSerialListener:107 - 
+14:45:30,664  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+14:45:30,664  INFO ArduinoSerialListener:107 - 
+14:45:30,667  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+14:45:30,667  INFO ArduinoSerialListener:107 - 
+14:45:30,667  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+14:45:30,667  INFO ArduinoSerialListener:107 - 
+14:45:30,737  INFO ArduinoSerialListener:327 - initialised Display Object
+14:45:30,774  INFO ArduinoSerialListener:331 - about to create ui elements
+14:45:34,977  INFO ArduinoSerialListener:333 - created ui elements
+18:44:42,873  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+18:44:42,893  INFO ArduinoSerialListener:107 - 
+18:44:42,894  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+18:44:42,894  INFO ArduinoSerialListener:107 - 
+18:44:42,897  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+18:44:42,897  INFO ArduinoSerialListener:107 - 
+18:44:42,897  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+18:44:42,897  INFO ArduinoSerialListener:107 - 
+18:44:44,162  INFO ArduinoSerialListener:327 - initialised Display Object
+18:44:44,163  INFO ArduinoSerialListener:331 - about to create ui elements
+18:44:47,337  INFO ArduinoSerialListener:333 - created ui elements
+18:46:38,677  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-PDA-Sync
+18:46:38,705  INFO ArduinoSerialListener:107 - 
+18:46:38,706  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-PDA-Sync
+18:46:38,706  INFO ArduinoSerialListener:107 - 
+18:46:38,711  INFO ArduinoSerialListener:106 - /dev/tty.Bluetooth-Modem
+18:46:38,711  INFO ArduinoSerialListener:107 - 
+18:46:38,711  INFO ArduinoSerialListener:106 - /dev/cu.Bluetooth-Modem
+18:46:38,712  INFO ArduinoSerialListener:107 - 
+18:46:40,577  INFO ArduinoSerialListener:317 - initialised Display Object
+18:46:55,240 ERROR ArduinoSerialListener:273 - Unknown Application
+gnu.io.PortInUseException: Unknown Application
+	at gnu.io.CommPortIdentifier.open(CommPortIdentifier.java:354)
+	at eu.fitlab.serial.ArduinoSerialListener.connect(ArduinoSerialListener.java:117)
+	at eu.fitlab.serial.ArduinoSerialListener$PortList$2.widgetSelected(ArduinoSerialListener.java:267)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at eu.fitlab.serial.ArduinoSerialListener$PortList.createDisplay(ArduinoSerialListener.java:311)
+	at eu.fitlab.serial.ArduinoSerialListener$PortList.open(ArduinoSerialListener.java:318)
+	at eu.fitlab.serial.ArduinoSerialListener.main(ArduinoSerialListener.java:217)

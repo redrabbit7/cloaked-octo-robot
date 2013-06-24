@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd" >
+<log4j:configuration>
+	<appender name="consoleApp" class="org.apache.log4j.ConsoleAppender">
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss,SSS} %5p %c{1}:%L - %m%n"/>
+		</layout>
+	</appender>
+	<appender name="fileroller" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="file" value="./prototype.log"/>
+        <param name="Append" value="true"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %5p %c{1}:%L - %m%n"/>
+        </layout>
+    </appender>
+	<category name="org.hibernate.engine.StatefulPersistenceContext.ProxyWarnLog">
+	<priority value="ERROR"/>
+	</category>
+	<root>
+		<priority value="debug"></priority>
+		<appender-ref ref="consoleApp"/>
+		<appender-ref ref="fileroller"/>
+	</root>
+</log4j:configuration>
