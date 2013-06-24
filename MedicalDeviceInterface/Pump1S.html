@@ -13,12 +13,14 @@
 	var trial = 1;
 	
 </script>
-<script type="text/javascript" src="./javascript/jquery.js"></script><script type="text/javascript" src="./javascript/navigate.js"></script>
+<script type="text/javascript" src="./javascript/jquery.js"></script>
+<script type="text/javascript" src="./javascript/navigate.js"></script>
 <script type="text/javascript" src="./javascript/exporganise.js"></script>
 <script>shuffleAll();</script>
 </head>
 <body>
-	
+
+<form id="inputForm">	
     <div class="center">
     
 <div id="input">
@@ -26,14 +28,13 @@
 	<div id="Instructions">
 		<h6>
        <u>Infusion number</u>: <span id='theTrial'><script>document.write(trial)</script></span> 
-       <br /> 
-        <br />
+       <br /> <br/>
         Instructions:&nbsp;
         <span id="instruction">Please select drug. <br /><br/>
         Press <b>Up/Down</b> arrow keys to select and <b>Enter</b> to confirm drug type.</span></h6>
    
     </div>
-	<form id="inputForm">
+	
 	 
   <div class="selectItem" id="drug" > 
   	<div class="fieldLabel"  style="width:290px;">Drug:&nbsp; 
@@ -58,21 +59,21 @@
   
   <div class="item" id="vtbi" hidden="true">
 		<div class="fieldLabel" >Enter VTBI: </div>  
-  		<div class="fieldValue" id="theVTBINumber" contenteditable="true"> 0.0 </div>&nbsp;mL
+  		<div class="fieldValue" id="theVTBINumber" contenteditable="true" > 0.0 </div>&nbsp;mL
         &nbsp;&nbsp;&nbsp;&nbsp;
         <button type="button" id="vtbiConfirm" >Confirm</button>
    </div>
        
   <div class="item" id="rate" hidden="true">
 		<div class="fieldLabel" >Enter Rate: </div>  
-  		<div class="fieldValue" id="theRateNumber" contenteditable="true"> 0.0 </div>
-        &nbsp;mL/min
+  		<div class="fieldValue" id="theRateNumber" contenteditable="true" > 0.0 </div>
+        &nbsp;mL/hr
         &nbsp;<button type="button" id="rateConfirm" >Confirm</button>
    </div>
   
   <div class="item" id="time" hidden="true">
 		<div class="fieldLabel" >Enter Time: </div>  
-  		<div class="fieldValue" id="theTimeNumber" contenteditable="true"> 0 </div>&nbsp; min
+  		<div class="fieldValue" id="theTimeNumber" contenteditable="true" > 0 </div>&nbsp; hrs
         &nbsp;&nbsp;
         <button type="button" id="timeConfirm" >Confirm</button>
   </div>
@@ -82,7 +83,8 @@
   </div>
    
 	</form>
-   <div id="csv"></div>
+   <div id="csv">
+   </div>
 	</div>
    
    </div>
