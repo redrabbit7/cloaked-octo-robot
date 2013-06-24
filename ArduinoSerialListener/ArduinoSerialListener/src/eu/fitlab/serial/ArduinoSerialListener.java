@@ -68,10 +68,10 @@ public class ArduinoSerialListener implements SerialPortEventListener{
 		keyMap.put(".", KeyEvent.VK_PERIOD);
 		keyMap.put("c", KeyEvent.VK_C);
 		
-		keyMap.put("w", KeyEvent.VK_W);
-		keyMap.put("x", KeyEvent.VK_X);
-		keyMap.put("y", KeyEvent.VK_Y);
-		keyMap.put("z", KeyEvent.VK_Z);
+		keyMap.put("w", KeyEvent.VK_UP);
+		keyMap.put("x", KeyEvent.VK_DOWN);
+		keyMap.put("y", KeyEvent.VK_BACKSPACE);
+		keyMap.put("z", KeyEvent.VK_ENTER);
 		
 		//knob
 		keyMap.put("U", KeyEvent.VK_UP);
