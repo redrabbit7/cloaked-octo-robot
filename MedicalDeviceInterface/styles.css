@@ -19,7 +19,7 @@ body {
 
 .item {
 	float:left;
-	width:790px;
+	width:797px;
 	padding:7px;
 	background:#FFFBC9;
 	border: solid 1px #CCC;
@@ -98,7 +98,7 @@ body {
 	}
 	
 .fieldLabel {
-	width: 120px;
+	width: 136px;
 	font-weight: bold;
 	padding-right: 3px;
 	float:left;

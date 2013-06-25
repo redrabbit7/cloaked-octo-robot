@@ -1,7 +1,8 @@
 var timeOffset;
 var myTime = 0;
 var calcTime = 0;
-
+var drugName = "";
+var numValuesEntered = "";
 var dataEntryStart;
 var dataEntryEnd;
 
@@ -44,16 +45,16 @@ var states = [{
 var currentState = 0;
 //initialize currentState to 0
 
-var drugs = [{
+var drugs = [/*{
 	name : 'AABA',
 	risk : 'Low'
-}, {
+}, */{
 	name : 'ABBA',
 	risk : 'Low'
 }, {
 	name : 'ACBA',
 	risk : 'Low'
-} /*, {
+} , /*{
 	name : 'ADBA',
 	risk : 'Low'
 }, {
@@ -89,10 +90,11 @@ var drugs = [{
 }, {
 	name : 'AOBA',
 	risk : 'Low'
-}, {
+}, */
+{
 	name : 'APBA',
 	risk : 'Low'
-}, {
+},/* {
 	name : 'AQBA',
 	risk : 'Low'
 }, {
@@ -149,10 +151,10 @@ var drugs = [{
 }, {
 	name : 'BMBA',
 	risk : 'High'
-}, {
+}, */{
 	name : 'BNBA',
 	risk : 'High'
-}, {
+}, /*{
 	name : 'BOBA',
 	risk : 'High'
 }, {
@@ -167,13 +169,13 @@ var drugs = [{
 }, {
 	name : 'BSBA',
 	risk : 'High'
-}*/, {
+},*/ {
 	name : 'BTBA',
 	risk : 'High'
-}, {
+}, /*{
 	name : 'BUBA',
 	risk : 'High'
-}, {
+}, */{
 	name : 'BVBA',
 	risk : 'High'
 }];
@@ -261,7 +263,7 @@ function download(strData, strFileName, strMimeType) {
 }/* end download() */
 
 function shuffleAll() {
-	shuffle(rate); b
+	shuffle(rate);
 	shuffle(vtbi);
 }
 
@@ -379,7 +381,7 @@ function enableFinalize() {
 
 //This variable stores everything you want to be in the csv file. This first bit lists the headings that will be at the top.
 var csv = "Target VTBI, Target Rate, Target Type, Key Press, Current Number, Time, First Seen Number<br/>";
-var csv2 = "Target VTBI, Target Rate, Target Type, Key Press, Current Number, Time, First Seen Number, Dose Entered%0A";
+var csv2 = "Drug Name, Num Values Entered, Target Type, Key Press, Current Number, Time, First Seen Number, Dose Entered%0A";
 
 $("document").ready(function() {
 
@@ -397,7 +399,7 @@ $("document").ready(function() {
 		var riskFrame = $("#riskFrame");
 		var value = $("#drugList").val();
 
-		var drugName = $("#drugList option:selected").text();
+		drugName = $("#drugList option:selected").text();
 		if (drugName.length > 4) {
 			alert("Please select drug type");
 			return;
@@ -434,7 +436,7 @@ $("document").ready(function() {
 
 	$('#numValuesConfirm').click(function(e) {
 
-		var value = $("#numberOfValues").val();
+		numValuesEntered = $("#numberOfValues").val();
 
 		if (confirm("Confirm number of values?")) {
 
@@ -444,7 +446,8 @@ $("document").ready(function() {
 			$("#vtbi").prop("hidden", false);
 			$("#rate").prop("hidden", false);
 
-			if (value == "2") {//if 2 values, enter VTBI and RATE
+			if (numValuesEntered == "2") {//if 2 values, enter VTBI and RATE
+				
 				stages = [0, 1, 2, 3, 5];
 				$("#instruction").html('Please enter VTBI and Rate');
 			} else {
@@ -702,9 +705,14 @@ $("document").ready(function() {
 				case 8:
 					key = "Clear";
 					dose = "";
-
+					
 					break;
-
+				//Escape
+				case 27:
+					key = "Escape";
+					dose = "";
+					
+					break;
 				//The enter key is pressed. This needs to do a number of things. Firstly update the trial number. Then reset the dose to
 				//0 as a new number needs to be input. It also updates the target number by getting a new number from the targets array.
 				case 13:
@@ -776,11 +784,9 @@ $("document").ready(function() {
 			if (currentState < 6) {
 				currDiv = states[currentState].divId;
 			}
-
-			type = 
 			
 			csv = csv + targetV + ',' + targetR + ',' + currDiv + ',' + key + ',' + amount + ',' + (e.timeStamp - timeOffset) / 1000 + ',' + firstSeen + '<br/>';
-			csv2 = csv2 + targetV + ',' + targetR + ',' + currDiv + ',' + key + ',' + amount + ',' + (e.timeStamp - timeOffset) / 1000 + ',' + firstSeen + ',' + dose + "%0A";
+			csv2 = csv2 + drugName + ',' + numValuesEntered + ',' + currDiv + ',' + key + ',' + amount + ',' + (e.timeStamp - timeOffset) / 1000 + ',' + firstSeen + ',' + dose + "%0A";
 
 			key = "";
 
