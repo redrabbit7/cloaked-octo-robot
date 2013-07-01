@@ -176,7 +176,7 @@ var drugs = [/*{
 	name : 'BUBA',
 	risk : 'High'
 }, */{
-	name : 'BVBA',
+	name : 'BUBA',
 	risk : 'High'
 }];
 
