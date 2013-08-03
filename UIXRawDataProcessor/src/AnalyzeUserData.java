@@ -5,8 +5,6 @@
  * 
  * */
 
-
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -16,14 +14,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
 
 public class AnalyzeUserData {
 
-	
-	private static final int ERROR_DEVIATION = 4;
+	private static final String DEVICE_2 = "mobile";
+	private static final String DEVICE_1 = "prototype";
 	private static final String HIGH_RISK_FAST = "HighRiskFast";
 	private static final Object LOW_RISK_FAST = "LowRiskFast";
 	private static final Object HIGH_RISK_ACCURATE = "HighRiskAccurate";
@@ -33,40 +32,34 @@ public class AnalyzeUserData {
 	private static List LRF_expected = null;
 	private static List HRA_expcted = null;
 	private static List LRA_expected = null;
-	
-	private static final String DATA_PATH = "C:\\Users\\Sahithi\\Google Drive\\UCL\\Thesis Project\\data\\";
-	
-	private static final String EXPECTED_DIR = DATA_PATH + "user_interaction_tests\\expected\\";
 
-	private static final String PROTOTYPE_VALID_PATH = DATA_PATH + "user_interaction_tests\\actual\\prototype\\valid\\";
+	private static final String DATA_PATH = "C:\\Users\\Sahithi\\Google Drive\\UCL\\Thesis Project\\data\\user_interaction_tests\\";
 
-	private static final String MOBILE_VALID_PATH = DATA_PATH+ "user_interaction_tests\\actual\\mobile\\valid\\";
+	private static final String EXPECTED_DIR = DATA_PATH + "expected\\";
 
 	private static final String[] folders = { "LowRiskFast\\",
 			"HighRiskFast\\", "LowRiskAccurate\\", "HighRiskAccurate\\" };
+	private static final double TWO_DIG_ERROR_MARGIN = 4;
+	private static final double THREE_DIG_ERROR_MARGIN = 4;
 
 	private static List<String> twoDig;
 	private static List<String> threeDig;
-	private static List<String> fourDig;
 
 	public static void main(String[] args) throws IOException {
 
-		// HRF_expected =
-		// initializeExpectedValues(Condition.HighRiskFast+".csv");
-		// LRF_expected =
-		// initializeExpectedValues(Condition.LowRiskFast+".csv");
-		// HRA_expcted =
-		// initializeExpectedValues(Condition.HighRiskAccurate+".csv");
-		// LRA_expected =
-		// initializeExpectedValues(Condition.LowRiskAccurate+".csv");
+		processRawData();
 
-		findTimeDiffsFromRawDataFiles(PROTOTYPE_VALID_PATH);
-		findTimeDiffsFromRawDataFiles(MOBILE_VALID_PATH);
+		//reformatFileForRepeatedMeasuresTesting();
+	}
 
-		calculateAverageDosageEntryTimes(PROTOTYPE_VALID_PATH, "prototype");
-		calculateAverageDosageEntryTimes(MOBILE_VALID_PATH, "mobile");
+	private static void processRawData() throws IOException,
+			FileNotFoundException {
+		cleanDiffDirectory(DATA_PATH + "\\actual\\time-diff\\");
 
-		reformatFileForRepeatedMeasuresTesting();
+		findTimeDiffsFromRawDataFiles(DEVICE_1);
+		findTimeDiffsFromRawDataFiles(DEVICE_2);
+
+		calculateAverageDosageEntryTimes();
 	}
 
 	private static List initializeExpectedValues(String filename)
@@ -93,94 +86,94 @@ public class AnalyzeUserData {
 		return prescriptions;
 
 	}
-	
-	private static void calculateAverageDosageEntryTimes(String pathname,
-			String deviceType) throws IOException {
+
+	private static void calculateAverageDosageEntryTimes()
+			throws IOException {
 		File folder_prototype;
 		boolean type = false;
 
 		BufferedWriter writer = new BufferedWriter(new FileWriter(new File(
-				pathname + "AverageTimes.csv")));
+				DATA_PATH + "AverageTimes.csv")));
 
-		writer.write("Participant Id,Device Type,Condition,2-digit,3-digit,4-digit");
-		writer.newLine();
+		String QUALIFIED_PATH = DATA_PATH + "actual\\time-diff\\";
 
-		for (int j = 0; j < folders.length; j++) {
-			// for each folder in the directory
+		folder_prototype = new File(QUALIFIED_PATH);
+		File[] listOfFiles = folder_prototype.listFiles();
+		Arrays.sort(listOfFiles);
 
-			String QUALIFIED_PATH = pathname + folders[j] + "diff//";
-			folder_prototype = new File(QUALIFIED_PATH);
-			File[] listOfFiles = folder_prototype.listFiles();
-			String condition = folders[j].substring(0, folders[j].length() - 3);
+		for (int i = 0; i < listOfFiles.length; i++) {
+			// for each csv file in the folder
 
-			for (int i = 0; i < listOfFiles.length; i++) {
-				// for each csv file in the folder
+			if (listOfFiles[i].isFile()
+					&& listOfFiles[i].getName().startsWith("TimeDiff")) {
 
-				if (listOfFiles[i].isFile()
-						&& listOfFiles[i].getName().startsWith("TimeDiff")) {
+				String filename = listOfFiles[i].getName();
+				String condition = findConditionFromFilename(filename);
 
-					String filename = listOfFiles[i].getName();
+				RandomAccessFile f = new RandomAccessFile(QUALIFIED_PATH
+						+ filename, "r");
+				BufferedReader inputReader = new BufferedReader(new FileReader(
+						QUALIFIED_PATH + filename));
 
-					RandomAccessFile f = new RandomAccessFile(QUALIFIED_PATH
-							+ filename, "r");
-					BufferedReader inputReader = new BufferedReader(
-							new FileReader(QUALIFIED_PATH + filename));
+				// read the file contents into a String:
+				String nextLine;
 
-					// read the file contents into a String:
-					String nextLine;
+				List<String> twoDig = new ArrayList();
+				List<String> threeDig = new ArrayList();
 
-					List<String> twoDig = new ArrayList();
-					List<String> threeDig = new ArrayList();
-					List<String> fourDig = new ArrayList();
+				List<String> times = new ArrayList<String>();
+				while ((nextLine = inputReader.readLine()) != null) {
 
-					List<String> times = new ArrayList<String>();
-					while ((nextLine = inputReader.readLine()) != null) {
+					StringTokenizer tok = new StringTokenizer(nextLine, ",");
 
-						StringTokenizer tok = new StringTokenizer(nextLine, ",");
+					String timeInterval = tok.nextToken();
+					String number = tok.nextToken();
 
-						String timeInterval = tok.nextToken();
-						String number = tok.nextToken();
-
-						if (!number.contains(".")) {
-							if (number.trim().length() == 3) {
-								threeDig.add(timeInterval);
-							} else if (number.trim().length() == 2) {
-								twoDig.add(timeInterval);
-							} else if (number.trim().length() == 4) {
-								fourDig.add(timeInterval);
-							}
+					if (!number.contains(".")) {
+						if (number.trim().length() == 3) {
+							threeDig.add(timeInterval);
+						} else if (number.trim().length() == 2) {
+							twoDig.add(timeInterval);
 						}
-
 					}
-
-					float avgTime2 = getTotal(twoDig);
-					float avgTime3 = getTotal(threeDig);
-					float avgTime4 = getTotal(fourDig);
-
-					reset();
-
-					String[] info = extractParticipantIdFromFilename(filename);
-
-					writer.write(info[0] + "," + deviceType + "," + info[1]
-							+ ",");
-					writer.write(Float.toString(avgTime2) + ",");
-					writer.write(Float.toString(avgTime3) + ",");
-					writer.write(Float.toString(avgTime4));
-					writer.newLine();
 
 				}
 
+				float avgTime2 = getTotal(twoDig,TWO_DIG_ERROR_MARGIN);
+				float avgTime3 = getTotal(threeDig,THREE_DIG_ERROR_MARGIN);
+
+				reset();
+
+				String[] info = extractPrescriptionInfoFromFilename(filename);
+
+				writer.write(info[0] + "," + info[2] + "," + info[1] + ",");
+				writer.write(Float.toString(avgTime2) + ",");
+				writer.write(Float.toString(avgTime3));
+				writer.newLine();
+
 			}
+
 		}
 		writer.close();
 
 	}
 
-	private static String[] extractParticipantIdFromFilename(String filename) {
-		String[] info = new String[2];
+	private static String findConditionFromFilename(String filename) {
+		StringTokenizer str = new StringTokenizer(filename, "-");
+
+		str.nextToken();
+		str.nextToken();
+
+		return str.nextToken();
+	}
+
+	private static String[] extractPrescriptionInfoFromFilename(String filename) {
+		String[] info = new String[3];
 
 		StringTokenizer tok1 = new StringTokenizer(filename);
 		String firstPart = tok1.nextToken();
+		String[] firstString = firstPart.split("-");
+		
 		String secondPart = tok1.nextToken();
 
 		StringTokenizer tok2 = new StringTokenizer(secondPart, "-");
@@ -193,6 +186,8 @@ public class AnalyzeUserData {
 
 		info[0] = partId;
 		info[1] = condition;
+		info[2] = firstString[1];
+		
 		return info;
 	}
 
@@ -200,10 +195,9 @@ public class AnalyzeUserData {
 
 		twoDig = new ArrayList();
 		threeDig = new ArrayList();
-		fourDig = new ArrayList();
 	}
 
-	private static float getTotal(List<String> times) {
+	private static float getTotal(List<String> times, double error_margin) {
 
 		Iterator<String> itr = times.iterator();
 		int size = 0;
@@ -211,7 +205,7 @@ public class AnalyzeUserData {
 		while (itr.hasNext()) {
 			String num = itr.next();
 			float float_number = Float.parseFloat(num);
-			if (float_number < ERROR_DEVIATION) {
+			if (float_number < error_margin) {
 				total += float_number;
 				size++;
 			}
@@ -220,19 +214,14 @@ public class AnalyzeUserData {
 		return size > 0 ? (total / size) : 0;
 	}
 
+	private static void reformatFileForRepeatedMeasuresTesting()
+			throws IOException {
 
-	private static void reformatFileForRepeatedMeasuresTesting() throws IOException {
+		BufferedReader reader = new BufferedReader(new FileReader(DATA_PATH
+				+ "AverageTimes.csv"));
 
-		BufferedReader reader = new BufferedReader(
-				new FileReader(
-						"C:\\Users\\Sahithi\\"
-								+ "Google Drive\\UCL\\Thesis Project\\data\\user_interaction_tests\\AverageTimes.csv"));
-
-		BufferedWriter writer = new BufferedWriter(
-				new FileWriter(
-						new File(
-								"C:\\Users\\Sahithi\\"
-										+ "Google Drive\\UCL\\Thesis Project\\data\\user_interaction_tests\\NonParametricColumnData.csv")));
+		BufferedWriter writer = new BufferedWriter(new FileWriter(new File(
+				DATA_PATH + "RepeatedMeasuresColumnData.csv")));
 		writer.write("SubjectID,DeviceType,HRF_2_Dig,LRF_2_Dig,HRA_2_Dig,LRA_2_Dig,"
 				+ "HRF_3_Dig,LRF_3_Dig,HRA_3_Dig,LRA_3_Dig");
 		writer.newLine();
@@ -240,7 +229,7 @@ public class AnalyzeUserData {
 		int subject_index = 4;
 		String newLine = "";
 		RepeatedMeasuresRow row = new RepeatedMeasuresRow();
-		String deviceType=null;
+		String deviceType = null;
 		while (null != (newLine = reader.readLine())) {
 			StringTokenizer tok = new StringTokenizer(newLine, ",");
 
@@ -251,57 +240,49 @@ public class AnalyzeUserData {
 			float threeDig = Float.parseFloat(tok.nextToken());
 
 			if (subjectId == subject_index) {
-				if (condition.trim().equals("HRA")) {
-					row.setHRA_Val_2(twoDig);
-					row.setHRA_Val_3(threeDig);
-				} else if (condition.trim().equals("HRF")) {
-					row.setHRF_Val_2(twoDig);
-					row.setHRF_Val_3(threeDig);
-				} else if (condition.trim().equals("LRA")) {
-					row.setLRA_Val_2(twoDig);
-					row.setLRA_Val_3(threeDig);
-				} else if (condition.trim().equals("LRF")) {
-					row.setLRF_Val_2(twoDig);
-					row.setLRF_Val_3(threeDig);
-				}
+				assign2and3DigitColumnValue(row, condition, twoDig, threeDig);
 
 			} else {
 
-				writer.write(subject_index + "," + deviceType + "," 
-						+ row.getHRF_Val_2() + "," + row.getLRF_Val_2() + "," 
-						+ row.getHRA_Val_2() + "," + row.getLRA_Val_2() + "," 
-						+ row.getHRF_Val_3() + "," + row.getLRF_Val_3() + "," 
+				writer.write(subject_index + "," + deviceType + ","
+						+ row.getHRF_Val_2() + "," + row.getLRF_Val_2() + ","
+						+ row.getHRA_Val_2() + "," + row.getLRA_Val_2() + ","
+						+ row.getHRF_Val_3() + "," + row.getLRF_Val_3() + ","
 						+ row.getHRA_Val_3() + "," + row.getLRA_Val_3());
 				writer.newLine();
 
 				row = new RepeatedMeasuresRow();
-				if (condition.trim().equals("HRA")) {
-					row.setHRA_Val_2(twoDig);
-					row.setHRA_Val_3(threeDig);
-				} else if (condition.trim().equals("HRF")) {
-					row.setHRF_Val_2(twoDig);
-					row.setHRF_Val_3(threeDig);
-				} else if (condition.trim().equals("LRA")) {
-					row.setLRA_Val_2(twoDig);
-					row.setLRA_Val_3(threeDig);
-				} else if (condition.trim().equals("LRF")) {
-					row.setLRF_Val_2(twoDig);
-					row.setLRF_Val_3(threeDig);
-				}
+				assign2and3DigitColumnValue(row, condition, twoDig, threeDig);
 				subject_index = subjectId;
 
 			}
 
 		}
 
-		writer.write(subject_index + "," + deviceType + "," 
-				+ row.getHRF_Val_2() + ","
-				+ row.getLRF_Val_2() + "," + row.getHRA_Val_2() + ","
-				+ row.getLRA_Val_2() + "," + row.getHRF_Val_3() + ","
-				+ row.getLRF_Val_3() + "," + row.getHRA_Val_3() + ","
-				+ row.getLRA_Val_3());
+		writer.write(subject_index + "," + deviceType + ","
+				+ row.getHRF_Val_2() + "," + row.getLRF_Val_2() + ","
+				+ row.getHRA_Val_2() + "," + row.getLRA_Val_2() + ","
+				+ row.getHRF_Val_3() + "," + row.getLRF_Val_3() + ","
+				+ row.getHRA_Val_3() + "," + row.getLRA_Val_3());
 
 		writer.close();
+	}
+
+	private static void assign2and3DigitColumnValue(RepeatedMeasuresRow row,
+			String condition, float twoDig, float threeDig) {
+		if (condition.trim().equals("HighRiskAccurate")) {
+			row.setHRA_Val_2(twoDig);
+			row.setHRA_Val_3(threeDig);
+		} else if (condition.trim().equals("HighRiskFast")) {
+			row.setHRF_Val_2(twoDig);
+			row.setHRF_Val_3(threeDig);
+		} else if (condition.trim().equals("LowRiskAccurate")) {
+			row.setLRA_Val_2(twoDig);
+			row.setLRA_Val_3(threeDig);
+		} else if (condition.trim().equals("LowRiskFast")) {
+			row.setLRF_Val_2(twoDig);
+			row.setLRF_Val_3(threeDig);
+		}
 	}
 
 	private static void findErrorsFromTimeDiffs(String pathname,
@@ -318,6 +299,7 @@ public class AnalyzeUserData {
 			String QUALIFIED_PATH = pathname + folders[j];
 			folder_name = new File(QUALIFIED_PATH + "\\diff\\");
 			File[] listOfFiles = folder_name.listFiles();
+			Arrays.sort(listOfFiles);
 
 			for (int i = 0; i < listOfFiles.length; i++) {
 				// for each diff file in the folder
@@ -332,7 +314,7 @@ public class AnalyzeUserData {
 
 					String newLine = null;
 
-					String[] info = extractParticipantIdFromFilename(filename);
+					String[] info = extractPrescriptionInfoFromFilename(filename);
 
 					String participantId = info[0];
 					String condition = info[1];
@@ -395,18 +377,20 @@ public class AnalyzeUserData {
 
 	}
 
-	private static void findTimeDiffsFromRawDataFiles(String pathname)
+	private static void findTimeDiffsFromRawDataFiles(String deviceType)
 			throws FileNotFoundException, IOException {
 		File folder_prototype;
 		boolean type = false;
+
 		for (int j = 0; j < folders.length; j++) {
 			// for each folder in the directory
+			String pathname = DATA_PATH + "actual\\" + deviceType + "\\valid\\";
 
 			String QUALIFIED_PATH = pathname + folders[j];
+			
 			folder_prototype = new File(QUALIFIED_PATH);
 			File[] listOfFiles = folder_prototype.listFiles();
-
-			cleanDiffDirectory(QUALIFIED_PATH);
+			Arrays.sort(listOfFiles);
 
 			for (int i = 0; i < listOfFiles.length; i++) {
 				// for each csv file in the folder
@@ -416,8 +400,9 @@ public class AnalyzeUserData {
 
 					String filename = listOfFiles[i].getName();
 					BufferedWriter diffWriter = new BufferedWriter(
-							new FileWriter(new File(QUALIFIED_PATH
-									+ "\\diff\\TimeDiff-" + filename)));
+							new FileWriter(new File(DATA_PATH
+									+ "actual\\time-diff\\" + "TimeDiff-"
+									+ deviceType + "-" + filename)));
 
 					RandomAccessFile f = new RandomAccessFile(QUALIFIED_PATH
 							+ filename, "r");
@@ -478,14 +463,14 @@ public class AnalyzeUserData {
 									float time2 = Float.parseFloat(second_time);
 
 									if (!doseEntered.contains(".")) {
-										
+
 										diffWriter.write(time2 - time1 + ","
 												+ doseEntered + "," + numVals);
 										diffWriter.newLine();
 									}
 
 									times = new ArrayList<String>();
-									//System.out.println("---------------------");
+									// System.out.println("---------------------");
 									if (!keyPress.trim().equals("Enter"))
 										times.add(timing + "," + currentNumber
 												+ "," + currentFieldType);
@@ -516,8 +501,11 @@ public class AnalyzeUserData {
 		}
 	}
 
-	private static void cleanDiffDirectory(String QUALIFIED_PATH) {
-		File diff_directory = new File(QUALIFIED_PATH + "\\diff\\");
+	private static void cleanDiffDirectory(String QUALIFIED_PATH)
+			throws IOException {
+		File diff_directory = new File(QUALIFIED_PATH);
+		if (!diff_directory.exists())
+			diff_directory.mkdir();
 		for (File file : (diff_directory.listFiles()))
 			if (file.getName().startsWith("TimeDiff"))
 				file.delete();
